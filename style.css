@@ -1,0 +1,219 @@
+* {
+    /*reset css*/
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    max-width: 100%;
+    overflow-x: hidden;
+    background-color: rgb(253, 244, 230);
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/*header*/
+
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: rgb(39, 38, 38);
+    gap: 10px;
+    text-align: center;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.imglogo {
+    width: 40px;
+    height: auto;
+}
+
+.nome {
+    font-size: 18px;
+    color: #ffffff;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+nav a {
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 6px 12px;
+    border-radius: 15px;
+    color: #000000;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #d3d3d3;
+    color: #000000;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    flex: 1;
+    text-align: center;
+}
+
+.imgtext {
+    width: 90%;
+    height: auto;
+}
+
+.textcontainer {
+    padding: 0 20px;
+}
+
+.textop {
+    font-size: 18px;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 17vw;
+    font-style: normal;
+}
+
+
+footer {
+    /*rodape*/
+    text-align: center;
+    padding: 15px;
+    font-size: 16px;
+    background-color: rgb(39, 38, 38);
+}
+
+.rodapetext {
+    color: rgb(206, 206, 206);
+}
+
+
+@media (min-width: 768px) {
+
+    /*tabletes*/
+    header {
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 20px 40px;
+        text-align: left;
+    }
+
+    .nome {
+        font-size: 20px;
+    }
+
+    nav a {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 40px;
+        gap: 30px;
+    }
+
+    .imgtext {
+        width: 50%;
+    }
+
+    .textop {
+        font-size: 20px;
+    }
+
+    footer {
+        font-size: 18px;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+    /*computador*/
+    header {
+        padding: 20px 60px;
+        height: 15vh;
+    }
+
+    .headeritems {
+        display: flex;
+        margin-left: 130vh;
+    
+       
+       
+    }
+
+    .logo {
+        display: flex;
+        margin-right: 90vh;
+
+    }
+
+
+    .imglogo {
+        width: 50px;
+    }
+
+    .nome {
+        font-size: 22px;
+    }
+
+    nav a {
+        font-size: 16px;
+        padding: 8px 14px;
+    }
+
+    .container {
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        gap: 50px;
+        padding: 60px;
+        text-align: left;
+
+    }
+
+    .textcontainer {
+        padding: 0 60px;
+    }
+
+    .textop {
+        font-size: 22px;
+    }
+
+    footer {
+        font-size: 19px;
+        padding: 20px;
+
+    }
+}
